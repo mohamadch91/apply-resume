@@ -1,0 +1,280 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+% Possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape'), and font family ('sans' and 'roman')
+
+%----------------------------------------------------------------------------------------
+% COLORS
+%----------------------------------------------------------------------
+\usepackage{xcolor}
+% \usepackage{titlesec}/
+% Main color
+\definecolor{maincol}{RGB}{255,150,0}
+% \titlespacing{\section}{0pt}{\parskip}{-\parskip}
+% Secondary colors
+\definecolor{secondcol}{RGB}{0,178,255}
+\definecolor{thirdcol}{RGB}{50,120,169}
+\definecolor{fourthcol}{RGB}{0,100,160}
+\definecolor{fifthcol}{RGB}{0,120,200}
+\definecolor{sixthcol}{RGB}{0,80,130}
+
+% Background color
+\definecolor{bgcol}{RGB}{255,255,255}
+
+% Text color
+\definecolor{textcol}{RGB}{0,50,80}
+
+% Section color
+\definecolor{sectcol}{RGB}{255,255,255}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+% Moderncv themes
+\moderncvstyle{classic} % Style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % Color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey', and 'black'
+%\renewcommand{\familydefault}{\sfdefault} % To set the default font; use '\sfdefault' for the default sans-serif font, '\rmdefault' for the default roman one, or any TeX font name
+\nopagenumbers{} % Uncomment to suppress automatic page numbering for CVs longer than one page
+
+% Character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+
+% If you are not using xelatex or lualatex, replace with the encoding you are using
+%\usepackage{CJKutf8} % If you need to use CJK to typeset your resume in Chinese, Japanese, or Korean
+\usepackage{multicol}
+
+% Adjust the page margins
+\usepackage[scale=0.8,top=0.5cm,bottom=0.1cm]{geometry}
+% \usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm} % If you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. Be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{xpatch}
+\xpatchcmd\cventry{,}{}{}{}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=thirdcol,
+}
+
+
+\vspace{7mm}
+% Personal data
+\name{Mohammad}{Choupan}
+% \address{70 Absolute Ave.}{L4Z 0A4 Mississauga}{Canada} % Optional, remove/comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\vspace*{7mm}
+% \address % \address{pariyamd.github.io}
+\phone[mobile]{+989126196168}
+\title{\normalfont}
+% Optional, remove/comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901} % Optional, remove/comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012} % Optional, remove/comment the line if not wanted
+\email{mohamadchoupan80@gmail.com}
+% Optional, remove/comment the line if not needed
+\social[github]{mohamadch91}
+% \photo[80pt][0.1pt]{pariya.png} % \date{2000-07-18}
+%----------------------------------------------------------------------------------
+% Content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+% \vspace {0mm}
+\makecvtitle
+
+\vspace {-9mm}
+
+%------------------------------
+\section{Education}
+\cventry{2020 -- 2024}{Bachelor's Degree}{Amirkabir University of Technology, Tehran, Iran}{Computer Engineering}{}{\begin{itemize}
+    \item GPA: 3.7/4
+    \item GPA Over the Last Two Years: 3.83/4
+\end{itemize}}
+
+\cventry{2016 -- 2019}{Diploma}{Atomic Energy High School, Tehran, Iran}{Mathematics and Physics Discipline}{}{}
+
+\vspace{0mm}
+\section{BSc Thesis}
+
+\cventry{August 2023 - Present}{Assessment of the Fusion of Graph Models and Point Net Model for Processing Graph and Point Cloud Data}{}{}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Supervisor: Prof. Javanmardi.
+\item Implementation and analysis of combining two common models in 3D Object classification, including SAG Pool and Point-Net, to gain the highest accuracy in point cloud classification.
+\end{itemize}}
+\vspace{-3mm}
+ % \setlength{\tabcolsep}{1pt}.
+\section{Research Interests}
+\vspace{-4mm}
+\begin{multicols}{3}
+    \begin{itemize}
+    \item Computer Vision
+    \item Panoptic Segmentation
+    \item Point Cloud Classification
+\vspace{-4mm}
+    
+    \end{itemize}
+\vspace{-4mm}
+    
+\end{multicols}
+\section{Research and Work Experience}
+\vspace{-1mm}
+
+\cventry{April 2023 -- Present}{Point Cloud Classification}{Tehran, Iran}{}{}{
+\begin{itemize} % 3 months
+\item Finding the best way to classify point cloud data with the highest accuracy.
+\end{itemize}}
+
+\cventry{April 2023 -- Present}{Evaluation of positioning error in self-driving cars using map matching methods}{Tehran, Iran}{}{}{
+\begin{itemize} % 3 months
+\item Finding Object cause error in NDT matching algorithm.Use Neural Networks to find object can cause error and
+objects can reduce the error.
+\end{itemize}}
+
+\cventry{February 2021 -- January 2023}{Freelancing as a Full-stack Developer}{Tehran, Iran}{}{}{
+\begin{itemize} % 3 months
+    \item \textbf{Designed and developed the \href{https://invgap.org}{Inventory Gap Analysis System} for World Help Organization (WHO).}
+    \begin{enumerate}
+        \item[-] Developed and validated analysis workflows for vaccine stocks in over 13 countries such as Ukraine, Azerbaijan, the Philippines, and more.
+        \item[-] Implemented load balancing for all countries on one server.
+    \end{enumerate}
+    \item \textbf{Designed and developed Cloud Drive.}
+    \begin{enumerate}
+        \item[-] Designed a simple cloud drive for personal use by the company.
+    \end{enumerate}
+\end{itemize}}
+
+\cventry{March 2021 -- November 2021}{Developer}{Puzzle Studio}{Tehran, Iran}{}{
+\begin{itemize} % 3 months
+\item Designed websites using agile sprint methods and also performed load balancing and developed online streaming servers for online courses. Visit \href{puzzlestu.com}{website}.
+\end{itemize}}
+
+% \cventry{May 2020}{Research on object detection methods for Tosan company}{}{}{}{
+% \begin{itemize}
+% \item Researched and authored a comparative technical report on different object detection methods in Python
+% \end{itemize}}
+
+%------------------------------
+\vspace*{0mm}
+\section{Teaching Assistant Experience}
+\cventry{Fall 2024}{Computer Networks}{Prof. Babak Sadeghian}{}{}{}
+\cventry{Fall 2023}{Cloud Computing}{Prof. Seyyed Ahmad Javadi}{}{}{}
+\cventry{Fall 2023}{Data Mining}{Prof. Maryam Mazlaghani}{}{}{}
+\cventry{Spring 2023}{Fundamentals of Robotics}{Prof. Mahdi Javanmardi}{}{}{}
+\cventry{Spring 2023}{Head TA Embedded and Real-time Systems}{Prof. Hamed Farbeh}{}{}{}
+\cventry{Spring 2023}{Algorithm Design}{Prof. Sajjad Shirali Shahreza}{}{}{}
+\cventry{Fall 2022}{Algorithm Design}{Prof. Mahdi Javanmardi}{}{}{}
+\cventry{Fall 2022}{Head TA Microprocessor and Assembly Lab}{Prof. Hamed Farbeh}{}{}{}
+\cventry{Spring 2022}{Head TA Algorithm Design}{Prof. Alireza Bagheri \& Prof. Sajjad Shirali Shahreza }{}{}{}
+\cventry{Spring 2022}{Microprocessor and Assembly}{Prof. Hamed Farbeh}{}{}{}
+\cventry{Fall 2021}{Data Structures and Algorithms}{Prof. Alireza Bagheri}{}{}{}
+\cventry{Fall 2021}{Fundamentals of Programming (C programming)}{Prof. Hossein Zeinali}{}{}{}
+
+% --------------------------
+
+\clearpage
+\medskip
+% % ------------------------
+% \vspace*{3em}
+\section{Publications}
+
+\cventry{July 2022}{}{}{}{}{
+% Detailed achievements:%
+\vspace*{-2em}
+\begin{itemize}
+\item 
+M. Ebadpour, M. Javan, \textbf{M. Choupan}, M. Atyabi, "PointNet meets Self-Attention Graph Pooling: A Synergistic Approach to Point Cloud Classification," \textit{(in progress)}. Visit \href{https://github.com/MohsenEbadpour/PointNet-meets-Self-Attention-Graph-Pooling-A-Synergistic-Approach-to-Point-Cloud-Classification}{link}.
+\end{itemize}}
+
+\vspace*{-0.5em}
+\section{Achievements}
+\cventry{September 2019 - May 2024}{University Courses}{}{}{}{ 
+% Detailed achievements:%
+\begin{itemize}
+\item Completed Computer Engineering courses with an A+ score, totaling 143 credits, while working in reputable companies and conducting research alongside my studies.
+\end{itemize}} 
+
+\cventry{August 2018}{Ranked within the top 0.5\% (900 among 164,278 students) in the Iranian University Entrance Exam}{}{}{}{ 
+% Detailed achievements:%
+\begin{itemize}
+\item The exam is highly competitive as it is the only way to gain admission to universities in Iran.
+\end{itemize}}
+
+\cventry{September 2018}{National Chemistry Olympiad Bronze Medal}{}{}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Earning a medal in the Chemistry Olympiad is challenging, with only 30 people awarded medals in the entire country.
+\end{itemize}}
+
+\section{Notable Projects}
+
+\cventry{Spring 2023}{Data Mining Course Projects}{\href{https://github.com/mohamadch91/Data-Mining-course}{GitHub}}{}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Preprocessed raw data and performed dimension reduction with PCA using a given dataset.
+\item Implemented a TensorFlow Neural Network project, tuned hyperparameters, and analyzed results using visualization.
+\item Applied association rules to a hypermarket dataset.
+\end{itemize}}
+
+\cventry{Spring 2022}{Search Engine}{\href{https://github.com/mohamadch91/AUT-Information-Retrieval}{GitHub}}{}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Built a news search engine that retrieves news articles by implementing tf-idf and k-means models and a k-nearest neighbors (KNN) classifier for categorizing unlabeled data in Python.
+\end{itemize}}
+
+\cventry{Fall 2021}{Fuzzy Inverted Pendulum}{\href{https://github.com/mohamadch91/Inverted-pendulum-FUZZY-control}{GitHub}}{}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item This project consists of an inverted pendulum simulator and a fuzzy controller. The main goal was to develop a simple yet useful simulator to model the environment, allowing for the creation of a fuzzy controller for the inverted pendulum problem. It was implemented using pygame and pyfuzzy in Python 2.7.
+\end{itemize}}
+
+\cventry{Fall 2021}{Image Processing with ANN}{\href{https://github.com/mohamadch91/Image-processing-Neural-network}{GitHub}}{}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item This is a simple example of image processing with ANN. The goal is to classify images of fruits using the Fruits-360 dataset. The project involved calculating the accuracy of the model.
+\end{itemize}}
+
+\cventry{Fall 2021}{Snail Jumper}{\href{https://github.com/mohamadch91/SnailJumper}{GitHub}}{}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item This is a simple example of using neuroevolution in games. It uses neural networks and a genetic algorithm to control a snake.
+\end{itemize}}
+
+\vspace*{0.5em}
+\section{Technical Skills}
+
+\cventry{}{Programming Languages:}{Python, Bash, JavaScript}{}{}{
+}
+\vspace*{-1em}
+
+\cventry{}{Tools/Frameworks:}{PyTorch, Scikit-Learn, TensorFlow, Pandas, NumPy}{}{}{
+}
+\vspace*{-1em}
+
+\cventry{}{Other:}{Git, React, LaTeX, DevOps}{}{}{
+}
+\vspace*{-1em}
+
+% \vspace*{2em}
+
+%------------------------------
+% \vspace*{0.5em}
+\section{Language Proficiency}
+\cventry{October 2023}{TOEFL IBT Test: 84}{}{}{}{ 
+% Detailed achievements:%
+\begin{itemize}
+\item Reading: 23
+\item Listening: 23
+\item Speaking: 18
+\item Writing: 20
+\end{itemize}}
+
+\vspace*{1em}
+
+\begin{center}
+References, further information, and proofs are available upon request
+\end{center}
+
+\end{document}
+
